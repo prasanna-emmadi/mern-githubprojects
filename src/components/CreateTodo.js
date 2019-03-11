@@ -68,7 +68,7 @@ export default class TodoList extends React.Component {
   render() {
     return (
       <div style={{ marginTop: 10 }}>
-        <h3>Create Todo</h3>
+        <h3>Create Tasks</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Description</label>
@@ -125,7 +125,7 @@ export default class TodoList extends React.Component {
           </div>
 
           <div>
-            <input type="submit" value="Create Todo" className="btn btn-primary" />
+            <input type="submit" value="Create" className="btn btn-primary" />
           </div>
 
         </form>

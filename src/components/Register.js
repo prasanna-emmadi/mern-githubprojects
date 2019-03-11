@@ -41,20 +41,23 @@ class Register extends React.Component {
   render() {
     return (
       <form onSubmit={this.onSubmit}>
-        <div>
+        <h3>Register</h3>
+        <div className="form-group">
           <label>username</label>
           <input type="text"
+            className="form-control"
             value={this.state.username}
             onChange={this.onUsernameChange} />
         </div>
-        <div>
+        <div className="form-group">
           <label>password</label>
           <input type="text"
+            className="form-control"
             value={this.state.password}
             onChange={this.onPasswordChange} />
         </div>
         <div>
-          <input type="submit" value="Register" />
+          <input type="submit" value="Register" className="btn btn-primary"/>
         </div>
       </form>
     );

@@ -17,7 +17,7 @@ export default class TodoList extends React.Component {
     axios.get(url)
       .then(response => {
         const todos = response.data;
-        console.log({todos});
+        console.log({ todos });
         this.setState(prevState => {
           return {
             ...prevState,
@@ -31,17 +31,19 @@ export default class TodoList extends React.Component {
   render() {
     return (
       <div>
-        <p>Welcome to TodoList component</p>
-        <ul>
-          {this.state.todos.map(todo => {
-            return (
-              <li key={todo._id}>
-                {todo.description}
-              </li>
-            );
-          })}
+        <p>Welcome to Project Tasks</p>
+        {this.state.todos.length === 0 ? <p>No tasks found</p> :
+          <ul>
+            {this.state.todos.map(todo => {
+              return (
+                <li key={todo._id}>
+                  {todo.description}
+                </li>
+              );
+            })}
 
-        </ul>
+          </ul>
+        }
       </div>
     );
   }

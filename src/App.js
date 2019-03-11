@@ -23,15 +23,15 @@ class App extends Component {
             <a className="navbar-brand" href="https://codingthesmartway.com" target="_blank">
               <img src={logo} width="30" height="30" alt="CodingTheSmartWay.com" />
             </a>
-            <Link to="/" className="navbar-brand">MERN-Stack Todo app</Link>
+            <Link to="/" className="navbar-brand">GitHubProjects and TaskLists</Link>
             <div className="collpase navbar-collapse">
               <ul className="navbar-nav mr-auto">
                 <li className="navbar-item">
-                  <Link to="/home" className="navbar-link col-sm-2">Todos</Link>
+                  <Link to="/home" className="navbar-link col-sm-2">Tasks</Link>
                 </li>
                 <br />
                 <li className="navbar-item">
-                  <Link to="/home/create" className="navbar-link col-sm-2">Create Todo</Link>
+                  <Link to="/home/create" className="navbar-link col-sm-2">Create Tasks</Link>
                 </li>
                 <li className="navbar-item">
                   <Link to="/home/githubUsername" className="navbar-link col-sm-2">Projects</Link>

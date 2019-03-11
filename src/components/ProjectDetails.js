@@ -7,10 +7,10 @@ const ProjectDetails = (props) => {
 
   return (
     <div style={{ marginTop: 10 }}>
-      <h3>Project Details</h3>
+      <h4>Project Details</h4>
       <p>{name}</p>
       <p>{description}</p>
-      <p>{url}</p>
+      <a href={url} className="navbar-link">{url}</a>
     </div>
   );
 
